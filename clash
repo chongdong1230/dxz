@@ -11,14 +11,24 @@ proxies:
   - {name: 俄罗斯（TG@阿伟科技/油管） 4, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: fd7d22dc-e0e4-436a-8f70-b873d4d95236, udp: true}
   - {name: 日本阿伟科技atTG/油管_1096_1424 |55.21Mb, server: c11s4.jamjams.net, port: 17938, type: vmess, uuid: e8d5a966-8093-4d4e-8977-0baca9c8ab55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 香港（TG@阿伟科技/油管） 7, server: hk2.qingyun123.xyz, port: 10050, type: trojan, password: 72871649-31f7-4c30-8e54-cb65c3213fb8, sni: hk2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 免费-日本4, server: jp04-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp04-vm0.entry.ikuuu.casa}, udp: true}
   - {name: 美国（TG@阿伟科技/油管） 9, server: c11s3.jamjams.net, port: 17938, type: vmess, uuid: e8d5a966-8093-4d4e-8977-0baca9c8ab55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 美国（TG@阿伟科技/油管）, server: c11s3.jamjams.net, port: 17938, type: vmess, uuid: e8d5a966-8093-4d4e-8977-0baca9c8ab55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 免费-日本5, server: jp05-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp05-tls-vm0.entry.vm-pass.org}, udp: true}
   - {name: 韩国（TG@阿伟科技/油管）, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: fd7d22dc-e0e4-436a-8f70-b873d4d95236, udp: true}
+  - {name: 香港 微软 |L1|1G|H1, server: hk1.pupu.live, port: 443, type: vmess, uuid: af5d72ff-4e99-3390-b74a-09b7aad28df8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk1.pupu.live}, udp: true}
   - {name: 美国（TG@阿伟科技/油管） 2, server: very.top-pc.workers.dev, port: 443, type: vmess, uuid: b9d62af8-ae33-4630-92cb-8b9b54560416, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: very.top-pc.workers.dev}, udp: true}
+  - {name: 免费-日本3, server: jp03-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp03-vm0.entry.ikuuu.casa}, udp: true}
   - {name: 香港1-tg频道:@ripaojiedian, server: 421hk.fans8.xyz, port: 443, type: vmess, uuid: 82a96743-115b-356d-90ae-2928f32d8958, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 421hk.fans8.xyz}, udp: true}
+  - {name: 免费01丨1x, server: dbarm.vproxy.us, port: 34567, type: trojan, password: bf7679d0-fe60-42e5-842e-7844c79c9d84, sni: dbarm.vproxy.us, skip-cert-verify: true, udp: true}
+  - {name: 免费-日本6, server: jp06-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp06-vm0.entry.ikuuu.casa}, udp: true}
   - {name: 美国（TG@阿伟科技/油管） 3, server: tro.beeos.xyz, port: 443, type: vmess, uuid: b9d62af8-ae33-4630-92cb-8b9b54560416, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: tro.beeos.xyz}, udp: true}
   - {name: 美国（TG@阿伟科技/油管） 4, server: c11s801.jamjams.net, port: 17938, type: vmess, uuid: e8d5a966-8093-4d4e-8977-0baca9c8ab55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 免费-日本1, server: jp01-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp01-vm0.entry.ikuuu.casa}, udp: true}
   - {name: 美国（TG@阿伟科技/油管） 5, server: vry.beeos.xyz, port: 443, type: vmess, uuid: b9d62af8-ae33-4630-92cb-8b9b54560416, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: vry.beeos.xyz}, udp: true}
+  - {name: 香港 微软 |L1||1G|H3, server: hk3.pupu.live, port: 443, type: vmess, uuid: af5d72ff-4e99-3390-b74a-09b7aad28df8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk3.pupu.live}, udp: true}
+  - {name: 香港 微软 |L1|1G|H2, server: hk2.pupu.live, port: 443, type: vmess, uuid: af5d72ff-4e99-3390-b74a-09b7aad28df8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk2.pupu.live}, udp: true}
+  - {name: 香港 微软 |L1||1G|H4, server: hk4.pupu.live, port: 443, type: vmess, uuid: af5d72ff-4e99-3390-b74a-09b7aad28df8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk4.pupu.live}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -31,14 +41,24 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -50,14 +70,24 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -70,14 +100,24 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -102,20 +142,34 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港（TG@阿伟科技/油管） 7
+      - 香港 微软 |L1|1G|H1
       - 香港1-tg频道:@ripaojiedian
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -128,14 +182,24 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
   - name: 📲 电报信息
     type: select
     proxies:
@@ -147,14 +211,24 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -167,14 +241,24 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -196,14 +280,24 @@ proxy-groups:
       - 俄罗斯（TG@阿伟科技/油管） 4
       - 日本阿伟科技atTG/油管_1096_1424 |55.21Mb
       - 香港（TG@阿伟科技/油管） 7
+      - 免费-日本4
       - 美国（TG@阿伟科技/油管） 9
       - 美国（TG@阿伟科技/油管）
+      - 免费-日本5
       - 韩国（TG@阿伟科技/油管）
+      - 香港 微软 |L1|1G|H1
       - 美国（TG@阿伟科技/油管） 2
+      - 免费-日本3
       - 香港1-tg频道:@ripaojiedian
+      - 免费01丨1x
+      - 免费-日本6
       - 美国（TG@阿伟科技/油管） 3
       - 美国（TG@阿伟科技/油管） 4
+      - 免费-日本1
       - 美国（TG@阿伟科技/油管） 5
+      - 香港 微软 |L1||1G|H3
+      - 香港 微软 |L1|1G|H2
+      - 香港 微软 |L1||1G|H4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
