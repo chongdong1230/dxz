@@ -5,103 +5,131 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 斯洛伐克 | BGP中转 | 0.5x, server: bgp.zhongzhuan.fnyun.cyou, port: 443, type: vmess, uuid: 3c39f959-6e2c-4d2b-973d-a471719990c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sk.fnyun.cyou}, udp: true}
-  - {name: 33.公益等级線路嚴格限速, server: yqy2333.china-cdn-net.com, port: 2333, type: vmess, uuid: fe483af4-5869-3064-8428-0d9b567472f8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /iso, ws-headers: {Host: yqy2333.china-cdn-net.com}, udp: true}
-  - {name: 35.包括V2ray和Trojan, server: yqy2335.china-cdn-net.com, port: 2335, type: vmess, uuid: fe483af4-5869-3064-8428-0d9b567472f8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /iso, ws-headers: {Host: yqy2335.china-cdn-net.com}, udp: true}
-  - {name: 免费-日本5, server: jp05-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp05-tls-vm0.entry.vm-pass.org}, udp: true}
-  - {name: 美国 | BGP中转 | 0.5x, server: bgp.zhongzhuan.fnyun.cyou, port: 443, type: vmess, uuid: 3c39f959-6e2c-4d2b-973d-a471719990c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us.fnyun.cyou}, udp: true}
-  - {name: 荷兰 | 移动中转 | 0.5x, server: cm.zhongzhuan.fnyun.cyou, port: 443, type: vmess, uuid: 3c39f959-6e2c-4d2b-973d-a471719990c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hl.fnyun.cyou}, udp: true}
-  - {name: 免费-日本6, server: jp06-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp06-vm0.entry.ikuuu.casa}, udp: true}
-  - {name: 免费-日本4, server: jp04-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp04-vm0.entry.ikuuu.casa}, udp: true}
+  - {name: Lv.1 | 美国 | 长沙联通 | 1.0×, server: z-cs.mceee.xyz, port: 21611, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: Lv.1 | 日本 | 长沙联通 | 1.0×, server: z-cs.mceee.xyz, port: 21311, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: Lv.1 | 新加坡 | 长沙联通 | 1.0×, server: z-cs.mceee.xyz, port: 21412, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: Lv.4 | 新加坡 | 深港IEPL 8k | 2×, server: x.mceee.xyz, port: 26041, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Lv.3 | 香港 | 江西CN2 | 1.5×, server: z-cn2.mceee.xyz, port: 23131, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cn2.mceee.xyz}, udp: true}
+  - {name: Lv.4 | 香港 | 深港IEPL 8k | 2×, server: x.mceee.xyz, port: 26011, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Lv.4 | 台湾 | 深港IEPL 8k | 2×, server: x.mceee.xyz, port: 26021, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "Hong Kong [TLS]", server: 0001.hk.genzpn.com, port: 443, type: trojan, password: 4f4418cd-385c-4203-a323-1b4d2be8e495, sni: 0001.hk.genzpn.com, skip-cert-verify: true, udp: true}
+  - {name: Lv.4 | 香港2 | 深港IEPL 8k | 2×, server: x.mceee.xyz, port: 26012, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 免费-日本3, server: jp03-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp03-vm0.entry.ikuuu.casa}, udp: true}
-  - {name: 免费-日本1, server: jp01-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp01-vm0.entry.ikuuu.casa}, udp: true}
-  - {name: 捷克 | BGP中转 | 0.5x, server: bgp.zhongzhuan.fnyun.cyou, port: 443, type: vmess, uuid: 3c39f959-6e2c-4d2b-973d-a471719990c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cz.fnyun.cyou}, udp: true}
-  - {name: 37.长期套餐覆盖IPLC专线, server: yqy2337.china-cdn-net.com, port: 2337, type: vmess, uuid: fe483af4-5869-3064-8428-0d9b567472f8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /iso, ws-headers: {Host: yqy2337.china-cdn-net.com}, udp: true}
-  - {name: 香港 微软 |L1|1G|H1, server: hk1.pupu.live, port: 443, type: vmess, uuid: af5d72ff-4e99-3390-b74a-09b7aad28df8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk1.pupu.live}, udp: true}
-  - {name: 免费01丨1x, server: dbarm.vproxy.us, port: 34567, type: trojan, password: bf7679d0-fe60-42e5-842e-7844c79c9d84, sni: dbarm.vproxy.us, skip-cert-verify: true, udp: true}
-  - {name: 香港 微软 |L1|1G|H2, server: hk2.pupu.live, port: 443, type: vmess, uuid: af5d72ff-4e99-3390-b74a-09b7aad28df8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk2.pupu.live}, udp: true}
-  - {name: 34.捐赠解锁更多协议线路, server: yqy2334.china-cdn-net.com, port: 2334, type: vmess, uuid: fe483af4-5869-3064-8428-0d9b567472f8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /iso, ws-headers: {Host: yqy2334.china-cdn-net.com}, udp: true}
-  - {name: 香港 微软 |L1||1G|H3, server: hk3.pupu.live, port: 443, type: vmess, uuid: af5d72ff-4e99-3390-b74a-09b7aad28df8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /cocksucker, ws-headers: {Host: hk3.pupu.live}, udp: true}
-  - {name: 香港1-tg频道:@ripaojiedian, server: 421hk.fans8.xyz, port: 443, type: vmess, uuid: 82a96743-115b-356d-90ae-2928f32d8958, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 421hk.fans8.xyz}, udp: true}
-  - {name: 36.中继中转隧道线路覆盖, server: yqy2336.china-cdn-net.com, port: 2336, type: vmess, uuid: fe483af4-5869-3064-8428-0d9b567472f8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /iso, ws-headers: {Host: yqy2336.china-cdn-net.com}, udp: true}
-  - {name: 以色列 | 移动中转 | 0.5x, server: cm.zhongzhuan.fnyun.cyou, port: 443, type: vmess, uuid: 3c39f959-6e2c-4d2b-973d-a471719990c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: il.fnyun.cyou}, udp: true}
+  - {name: Lv.3 | 新加坡 | CN2 BGP | 1.5×, server: z-mm.mceee.xyz, port: 23422, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-mm.mceee.xyz}, udp: true}
+  - {name: Lv.2 | 印度 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 22925, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.1 | 俄罗斯 | 长沙联通 | 1.0×, server: z-cs.mceee.xyz, port: 21911, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: Lv.2 | 俄罗斯 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 22921, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.1 | 新加坡 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 21421, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.2 | 英国 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 22923, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.2 | 韩国 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 22521, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.3 | 新加坡 | 深圳移动 | 1.2×, server: z-fs.mceee.xyz, port: 23421, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.1 | 香港 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 21123, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.2 | 土耳其 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 22924, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.2 | 荷兰 | 深圳移动 | 1.0×, server: z-fs.mceee.xyz, port: 22922, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-fs.mceee.xyz}, udp: true}
+  - {name: Lv.4 | 日本 | 深港IEPL 8k | 2×, server: x.mceee.xyz, port: 26031, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Lv.1 | 台湾 | 长沙联通 | 1.0×, server: z-cs.mceee.xyz, port: 21211, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: Lv.4 | 美国 | 深港IEPL 8k | 2×, server: x.mceee.xyz, port: 26061, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Lv.2 | 新加坡 | 长沙联通 | 1.0×, server: z-cs.mceee.xyz, port: 21411, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cs.mceee.xyz}, udp: true}
+  - {name: Lv.3 | 香港2 | 江西CN2 | 1.5×, server: z-cn2.mceee.xyz, port: 23133, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cn2.mceee.xyz}, udp: true}
+  - {name: Lv.2 | 美国 | 江西 BGP | 1.5×, server: z-cn2.mceee.xyz, port: 22631, type: vmess, uuid: bca2b267-61ac-3152-9525-ea1757f8d9f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /download, ws-headers: {Host: z-cn2.mceee.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -120,111 +148,145 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 微软 |L1|1G|H1
-      - 香港 微软 |L1|1G|H2
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -240,26 +302,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 斯洛伐克 | BGP中转 | 0.5x
-      - 33.公益等级線路嚴格限速
-      - 35.包括V2ray和Trojan
-      - 免费-日本5
-      - 美国 | BGP中转 | 0.5x
-      - 荷兰 | 移动中转 | 0.5x
-      - 免费-日本6
-      - 免费-日本4
+      - Lv.1 | 美国 | 长沙联通 | 1.0×
+      - Lv.1 | 日本 | 长沙联通 | 1.0×
+      - Lv.1 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.4 | 新加坡 | 深港IEPL 8k | 2×
+      - Lv.3 | 香港 | 江西CN2 | 1.5×
+      - Lv.4 | 香港 | 深港IEPL 8k | 2×
+      - Lv.4 | 台湾 | 深港IEPL 8k | 2×
+      - Hong Kong [TLS]
+      - Lv.4 | 香港2 | 深港IEPL 8k | 2×
       - 免费-日本3
-      - 免费-日本1
-      - 捷克 | BGP中转 | 0.5x
-      - 37.长期套餐覆盖IPLC专线
-      - 香港 微软 |L1|1G|H1
-      - 免费01丨1x
-      - 香港 微软 |L1|1G|H2
-      - 34.捐赠解锁更多协议线路
-      - 香港 微软 |L1||1G|H3
-      - 香港1-tg频道:@ripaojiedian
-      - 36.中继中转隧道线路覆盖
-      - 以色列 | 移动中转 | 0.5x
+      - Lv.3 | 新加坡 | CN2 BGP | 1.5×
+      - Lv.2 | 印度 | 深圳移动 | 1.0×
+      - Lv.1 | 俄罗斯 | 长沙联通 | 1.0×
+      - Lv.2 | 俄罗斯 | 深圳移动 | 1.0×
+      - Lv.1 | 新加坡 | 深圳移动 | 1.0×
+      - Lv.2 | 英国 | 深圳移动 | 1.0×
+      - Lv.2 | 韩国 | 深圳移动 | 1.0×
+      - Lv.3 | 新加坡 | 深圳移动 | 1.2×
+      - Lv.1 | 香港 | 深圳移动 | 1.0×
+      - Lv.2 | 土耳其 | 深圳移动 | 1.0×
+      - Lv.2 | 荷兰 | 深圳移动 | 1.0×
+      - Lv.4 | 日本 | 深港IEPL 8k | 2×
+      - Lv.1 | 台湾 | 长沙联通 | 1.0×
+      - Lv.4 | 美国 | 深港IEPL 8k | 2×
+      - Lv.2 | 新加坡 | 长沙联通 | 1.0×
+      - Lv.3 | 香港2 | 江西CN2 | 1.5×
+      - Lv.2 | 美国 | 江西 BGP | 1.5×
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
