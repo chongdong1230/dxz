@@ -5,331 +5,291 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "[CT/CM]香港 15", server: shsuconpro.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-9, server: usastart.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 日本 Azure A 2.5x, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-7, server: usastart.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 日本 Azure B 2.5x, server: shallaz.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-5, server: usastart.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-10, server: usastart.proconcn.xyz, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-8, server: usastart.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 D 3.5, server: usastandard.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-6, server: usastart.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 A 3.5, server: usastandard.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 B, server: cstwrelay.onlineto.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 F, server: cstwrelay.onlineto.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 F 3.5, server: usastandard2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 D, server: cstwrelay.onlineto.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 A, server: cstwrelay.onlineto.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-2, server: shusa.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 17", server: shcu002online.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 G, server: cstwrelay.onlineto.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 H 3.5, server: usastandard2.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-4, server: shusa.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 C, server: cstwrelay.onlineto.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-1, server: shusa.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 E, server: cstwrelay.onlineto.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化-3, server: shusa.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 C 3.5, server: usastandard.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT G", server: cusouthcmhk.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN E", server: shcris02stand.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 H, server: cstwrelay.onlineto.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 B 3.5, server: usastandard.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN A", server: shonlinesandcu02.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: MY|马来西亚, server: mlxy-zf.jiashumao.net, port: 27171, type: trojan, password: 91a5119a-b6b9-3d77-a3f4-ac37afbc5e72, sni: mlxy-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 美国 优化 I 3.5, server: usastandard2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 01", server: hzrelaycu.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT B", server: cncusouth.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT E", server: cncusouth.procncon.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 13", server: shcu002online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 M, server: shallaz2.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN B", server: shonlinesandcu02.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN C", server: cmrelayhk.dnsflix.com, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT J", server: cmrelayhk.dnsflix.com, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 02", server: shcu002online.proconcn.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKBN D", server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 14", server: shusacu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 香港动态 HKT B, server: csdynhkt.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 10", server: cnrelaycm.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT D", server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 O, server: shallaz2.proconcn.xyz, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT A", server: shonlinecu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 新加坡D, server: shallaz4.dnsflix.com, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 11", server: shusacu.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 德国, server: relaypro.procncon.xyz, port: 618, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 05", server: shusacu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT H", server: shonlinecu.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 土耳其, server: relaypro.procncon.xyz, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 I, server: shallaz2.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 N, server: shallaz2.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 俄罗斯c RT, server: relaypro.procncon.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT C", server: shcris03.proconcn.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 P, server: shallaz2.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 加拿大, server: relaypro.procncon.xyz, port: 615, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM] HKT K", server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 台湾 L, server: shallaz2.proconcn.xyz, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 意大利, server: relaypro.procncon.xyz, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 09", server: shcu001online.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 新加坡C, server: shallaz4.dnsflix.com, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 免费-日本2, server: jp02-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: jp02-vm0.entry.ikuuu.casa}, udp: true}
-  - {name: "[CT/CM]香港 07", server: shcu001online.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 美国 优化 G 3.5, server: usastandard2.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: "[CT/CM]香港 04", server: shcu001online.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
+  - {name: 日本-优化2, server: m.mjmjmjmj.cyou, port: 16617, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 澳大利亚-优化, server: u.mjmjmjmj.cyou, port: 16638, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mjp, ws-headers: {Host: pull.free.video.10010.com}, udp: true}
+  - {name: 美国-优化, server: u.mjmjmjmj.cyou, port: 16632, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 土耳其-优化, server: u.mjmjmjmj.cyou, port: 16630, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 波兰-优化2, server: m.mjmjmjmj.cyou, port: 16646, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 荷兰-优化, server: u.mjmjmjmj.cyou, port: 16642, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港-隧道2, server: m.mjmjmjmj.cyou, port: 26633, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港Az-优化3, server: t.mjmjmjmj.cyou, port: 16627, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 印度-优化, server: u.mjmjmjmj.cyou, port: 16626, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 新加坡-优化, server: u.mjmjmjmj.cyou, port: 16618, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港HKT-优化3, server: t.mjmjmjmj.cyou, port: 16620, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港HGC-优化2, server: m.mjmjmjmj.cyou, port: 16621, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港HKT-优化2, server: m.mjmjmjmj.cyou, port: 16620, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港HKT2-优化, server: u.mjmjmjmj.cyou, port: 16631, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 马来西亚-优化3, server: m.mjmjmjmj.cyou, port: 26623, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港-隧道, server: u.mjmjmjmj.cyou, port: 26633, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 土耳其-优化3, server: t.mjmjmjmj.cyou, port: 16630, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 英国-优化, server: u.mjmjmjmj.cyou, port: 16644, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 墨西哥-优化1, server: u.mjmjmjmj.cyou, port: 16636, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 新加坡-智能, server: g.mjmjmjmj.cyou, port: 16618, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: g.mjmjmjmj.cyou}, udp: true}
+  - {name: 阿根廷-优化1, server: u.mjmjmjmj.cyou, port: 16628, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港HGC-优化3, server: t.mjmjmjmj.cyou, port: 16621, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 俄罗斯-优化, server: u.mjmjmjmj.cyou, port: 16625, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 德国-优化2, server: m.mjmjmjmj.cyou, port: 23309, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 南非-优化, server: u.mjmjmjmj.cyou, port: 16640, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 芬兰-优化2, server: m.mjmjmjmj.cyou, port: 16643, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 德国-优化3, server: t.mjmjmjmj.cyou, port: 23309, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港-隧道3, server: t.mjmjmjmj.cyou, port: 26633, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 阿根廷-优化3, server: t.mjmjmjmj.cyou, port: 16628, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 美国-优化2, server: m.mjmjmjmj.cyou, port: 16632, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 法国-优化, server: u.mjmjmjmj.cyou, port: 16645, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 荷兰-优化2, server: m.mjmjmjmj.cyou, port: 16642, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港Az-优化2, server: m.mjmjmjmj.cyou, port: 16627, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 芬兰-优化3, server: t.mjmjmjmj.cyou, port: 16643, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 英国-优化2, server: m.mjmjmjmj.cyou, port: 16644, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 墨西哥-优化3, server: t.mjmjmjmj.cyou, port: 16636, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 日本-优化3, server: t.mjmjmjmj.cyou, port: 16617, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 加拿大-优化, server: u.mjmjmjmj.cyou, port: 16641, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港HKT2-优化3, server: t.mjmjmjmj.cyou, port: 16631, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 芬兰-优化, server: u.mjmjmjmj.cyou, port: 16643, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 德国-优化, server: u.mjmjmjmj.cyou, port: 23309, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 柬埔寨-优化, server: u.mjmjmjmj.cyou, port: 16634, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 马来西亚-优化, server: u.mjmjmjmj.cyou, port: 26623, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 马来西亚-优化2, server: m.mjmjmjmj.cyou, port: 26623, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港Az-优化, server: u.mjmjmjmj.cyou, port: 16627, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 新加坡-优化3, server: t.mjmjmjmj.cyou, port: 16618, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 土耳其-优化2, server: m.mjmjmjmj.cyou, port: 16630, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港-优化2, server: m.mjmjmjmj.cyou, port: 16633, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 印度-智能, server: g.mjmjmjmj.cyou, port: 16626, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: g.mjmjmjmj.cyou}, udp: true}
+  - {name: 阿根廷-优化2, server: u.mjmjmjmj.cyou, port: 16628, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 俄罗斯RU2-优化, server: u.mjmjmjmj.cyou, port: 16647, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: ss丨隧道丨香港100Mbps, server: gx3.mayiyun.shop, port: 10016, type: ss, cipher: aes-256-gcm, password: 94ff1ce8-30d2-4b8f-8973-e7046364f260, udp: true}
+  - {name: 日本-智能, server: g.mjmjmjmj.cyou, port: 16617, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: g.mjmjmjmj.cyou}, udp: true}
+  - {name: 英国-优化3, server: t.mjmjmjmj.cyou, port: 16644, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
+  - {name: 台湾-智能, server: g.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: g.mjmjmjmj.cyou}, udp: true}
+  - {name: 乌克兰-优化, server: u.mjmjmjmj.cyou, port: 16637, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 香港HKT2-优化2, server: m.mjmjmjmj.cyou, port: 16631, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 尼日利亚-优化, server: u.mjmjmjmj.cyou, port: 16639, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 巴西-优化1, server: u.mjmjmjmj.cyou, port: 16635, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 新加坡-优化2, server: m.mjmjmjmj.cyou, port: 16618, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 加拿大-优化2, server: m.mjmjmjmj.cyou, port: 16641, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 日本-优化, server: u.mjmjmjmj.cyou, port: 16617, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 台湾-优化3, server: t.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: t.mjmjmjmj.cyou}, udp: true}
   - {name: CN_243, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: "[CT/CM]香港 08", server: cnrelaycm.procncon.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: US|美国, server: us-cera.jiashumao.net, port: 12001, type: trojan, password: 91a5119a-b6b9-3d77-a3f4-ac37afbc5e72, sni: us-cera.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: HK-B|香港, server: bnbq-zf.jiashumao.net, port: 26381, type: trojan, password: 91a5119a-b6b9-3d77-a3f4-ac37afbc5e72, sni: bnbq-zf.jiashumao.net, skip-cert-verify: true, udp: true}
-  - {name: 美国 优化 E 3.5, server: usastandard.proconcn.xyz, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
-  - {name: 免费-日本1, server: jp01-vm0.entry.ikuuu.casa, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bf419d5f59f96a.windowsupdate.com}, udp: true}
-  - {name: "[CT/CM]香港 03", server: curelayhk.dnsflix.com, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33526:11223344abc, obfs-param: "", udp: true}
+  - {name: 台湾-优化, server: u.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: u.mjmjmjmj.cyou}, udp: true}
+  - {name: 台湾-优化2, server: m.mjmjmjmj.cyou, port: 16616, type: vmess, uuid: 7f90c46f-a1a4-4978-926f-c202377ed5f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: m.mjmjmjmj.cyou}, udp: true}
+  - {name: 80丨华南高速丨100Mbps, server: gx.mayiyun.shop, port: 80, type: vmess, uuid: 94ff1ce8-30d2-4b8f-8973-e7046364f260, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ll, ws-headers: {Host: open.dingtalk.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -348,379 +308,314 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - "[CT/CM]香港 15"
-      - 台湾 B
-      - 台湾 F
-      - 台湾 D
-      - 台湾 A
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 台湾 C
-      - 台湾 E
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - "[CT/CM] HKBN A"
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - "[CT/CM]香港 11"
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 台湾 I
-      - 台湾 N
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - "[CT/CM]香港 09"
-      - "[CT/CM]香港 07"
-      - "[CT/CM]香港 04"
-      - "[CT/CM]香港 08"
-      - HK-B|香港
-      - "[CT/CM]香港 03"
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 香港-隧道
+      - 香港HGC-优化3
+      - 香港-隧道3
+      - 香港Az-优化2
+      - 香港HKT2-优化3
+      - 香港Az-优化
+      - 香港-优化2
+      - ss丨隧道丨香港100Mbps
+      - 台湾-智能
+      - 香港HKT2-优化2
+      - 台湾-优化3
+      - 台湾-优化
+      - 台湾-优化2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -736,83 +631,73 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[CT/CM]香港 15"
-      - 美国 优化-9
-      - 日本 Azure A 2.5x
-      - 美国 优化-7
-      - 日本 Azure B 2.5x
-      - 美国 优化-5
-      - 美国 优化-10
-      - 美国 优化-8
-      - 美国 优化 D 3.5
-      - 美国 优化-6
-      - 美国 优化 A 3.5
-      - 台湾 B
-      - 台湾 F
-      - 美国 优化 F 3.5
-      - 台湾 D
-      - 台湾 A
-      - 美国 优化-2
-      - "[CT/CM]香港 17"
-      - 台湾 G
-      - 美国 优化 H 3.5
-      - 美国 优化-4
-      - 台湾 C
-      - 美国 优化-1
-      - 台湾 E
-      - 美国 优化-3
-      - 美国 优化 C 3.5
-      - "[CT/CM] HKT G"
-      - "[CT/CM] HKBN E"
-      - 台湾 H
-      - 美国 优化 B 3.5
-      - "[CT/CM] HKBN A"
-      - MY|马来西亚
-      - 美国 优化 I 3.5
-      - "[CT/CM]香港 01"
-      - "[CT/CM] HKT B"
-      - "[CT/CM] HKT E"
-      - "[CT/CM]香港 13"
-      - 台湾 M
-      - "[CT/CM] HKBN B"
-      - "[CT/CM] HKBN C"
-      - "[CT/CM] HKT J"
-      - "[CT/CM]香港 02"
-      - "[CT/CM] HKBN D"
-      - "[CT/CM]香港 14"
-      - 香港动态 HKT B
-      - "[CT/CM]香港 10"
-      - "[CT/CM] HKT D"
-      - 台湾 O
-      - "[CT/CM] HKT A"
-      - 新加坡D
-      - "[CT/CM]香港 11"
-      - 德国
-      - "[CT/CM]香港 05"
-      - "[CT/CM] HKT H"
-      - 土耳其
-      - 台湾 I
-      - 台湾 N
-      - 俄罗斯c RT
-      - "[CT/CM] HKT C"
-      - 台湾 P
-      - 加拿大
-      - "[CT/CM] HKT K"
-      - 台湾 L
-      - 意大利
-      - "[CT/CM]香港 09"
-      - 新加坡C
-      - 免费-日本2
-      - "[CT/CM]香港 07"
-      - 美国 优化 G 3.5
-      - "[CT/CM]香港 04"
+      - 日本-优化2
+      - 澳大利亚-优化
+      - 美国-优化
+      - 土耳其-优化
+      - 波兰-优化2
+      - 荷兰-优化
+      - 香港-隧道2
+      - 香港Az-优化3
+      - 印度-优化
+      - 新加坡-优化
+      - 香港HKT-优化3
+      - 香港HGC-优化2
+      - 香港HKT-优化2
+      - 香港HKT2-优化
+      - 马来西亚-优化3
+      - 香港-隧道
+      - 土耳其-优化3
+      - 英国-优化
+      - 墨西哥-优化1
+      - 新加坡-智能
+      - 阿根廷-优化1
+      - 香港HGC-优化3
+      - 俄罗斯-优化
+      - 德国-优化2
+      - 南非-优化
+      - 芬兰-优化2
+      - 德国-优化3
+      - 香港-隧道3
+      - 阿根廷-优化3
+      - 美国-优化2
+      - 法国-优化
+      - 荷兰-优化2
+      - 香港Az-优化2
+      - 芬兰-优化3
+      - 英国-优化2
+      - 墨西哥-优化3
+      - 日本-优化3
+      - 加拿大-优化
+      - 香港HKT2-优化3
+      - 芬兰-优化
+      - 德国-优化
+      - 柬埔寨-优化
+      - 马来西亚-优化
+      - 马来西亚-优化2
+      - 香港Az-优化
+      - 新加坡-优化3
+      - 土耳其-优化2
+      - 香港-优化2
+      - 印度-智能
+      - 阿根廷-优化2
+      - 俄罗斯RU2-优化
+      - ss丨隧道丨香港100Mbps
+      - 日本-智能
+      - 英国-优化3
+      - 台湾-智能
+      - 乌克兰-优化
+      - 香港HKT2-优化2
+      - 尼日利亚-优化
+      - 巴西-优化1
+      - 新加坡-优化2
+      - 加拿大-优化2
+      - 日本-优化
+      - 台湾-优化3
       - CN_243
-      - "[CT/CM]香港 08"
-      - US|美国
-      - HK-B|香港
-      - 美国 优化 E 3.5
-      - 免费-日本1
-      - "[CT/CM]香港 03"
+      - 台湾-优化
+      - 台湾-优化2
+      - 80丨华南高速丨100Mbps
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
