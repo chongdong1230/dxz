@@ -5,351 +5,115 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_243, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: US B 003, server: jpaz3.xmrth-node.xyz, port: 15946, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 007, server: hkaz7.xmrth-node.xyz, port: 15906, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: TW A 1, server: hkaz1.xmrth-node.xyz, port: 16074, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 台湾家宽-上海微软, server: shaz.mmjs.vip, port: 58510, type: ss, cipher: chacha20-ietf-poly1305, password: d975d166-f2b7-4072-a31a-edbe5c097011, udp: true}
-  - {name: 香港DMIT-上海微软, server: shaz.mmjs.vip, port: 18274, type: ss, cipher: chacha20-ietf-poly1305, password: d975d166-f2b7-4072-a31a-edbe5c097011, udp: true}
-  - {name: US B 004, server: jpaz4.xmrth-node.xyz, port: 13868, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: TW B 2, server: jpaz2.xmrth-node.xyz, port: 13240, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: TW B 1, server: jpaz1.xmrth-node.xyz, port: 14065, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 香港DMIT-广州微软, server: gy.ziqiyun.xyz, port: 56060, type: ss, cipher: chacha20-ietf-poly1305, password: d975d166-f2b7-4072-a31a-edbe5c097011, udp: true}
-  - {name: US 006, server: inap006.xmrth-node.xyz, port: 11865, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 香港BGP-广州微软, server: gy.ziqiyun.xyz, port: 45436, type: ss, cipher: chacha20-ietf-poly1305, password: d975d166-f2b7-4072-a31a-edbe5c097011, udp: true}
-  - {name: 台湾家宽-广州微软, server: gy.ziqiyun.xyz, port: 47795, type: ss, cipher: chacha20-ietf-poly1305, password: d975d166-f2b7-4072-a31a-edbe5c097011, udp: true}
-  - {name: US B 001, server: jpaz1.xmrth-node.xyz, port: 15547, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 107, server: hkaz7.xmrth-node.xyz, port: 15882, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: TW 2, server: tw2.xmrth-node.xyz, port: 16018, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US 007, server: inap007.xmrth-node.xyz, port: 15567, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US 005, server: inap005.xmrth-node.xyz, port: 15555, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US 001, server: inap001.xmrth-node.xyz, port: 15658, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 106, server: hkaz6.xmrth-node.xyz, port: 15905, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 006, server: hkaz006.xmrth-node.xyz, port: 15886, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 台湾-河南移动负载均衡(中转) | 解锁流媒体, server: hnyd.52147.top, port: 20160, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, sni: hnyd.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾-广州移动2负载均衡(中转) | 解锁流媒体, server: gzyd2.52147.top, port: 20160, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南 | 广州移动2(中转), server: gzyd2.52147.top, port: 20110, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, sni: gzyd2.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾-广州移动负载均衡(中转) | 解锁流媒体, server: gzyd1.52147.top, port: 20160, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, sni: gzyd1.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 越南-1号, server: 103.173.255.21, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
   - {name: Relay_🇨🇳CN-🇨🇳CN_252, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
-  - {name: HK 005, server: hkaz005.xmrth-node.xyz, port: 15891, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: TW 1, server: tw1.xmrth-node.xyz, port: 15660, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: CN_243, server: 117.28.242.156, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: CN 腾讯云, server: 121.4.19.247, port: 15251, type: ss, cipher: aes-256-cfb, password: abc@123, udp: true}
+  - {name: CN_207 | 7.03Mb, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 台湾-2号 | 解锁流媒体, server: 165.154.253.34, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
+  - {name: 越南-2号, server: 103.173.255.127, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
+  - {name: 台湾Hinet | 解锁流媒体, server: hinet.52147.top, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, sni: hinet.52147.top, skip-cert-verify: true, udp: true}
+  - {name: 台湾-3号 | 解锁流媒体, server: 165.154.253.49, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
+  - {name: CN_203 | 3.88Mb, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: 台湾-1号 | 解锁流媒体, server: 165.154.243.208, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
+  - {name: US_1526, server: s1.hazz.win, port: 12340, type: trojan, password: dfbf0d67-f03d-4184-a224-c2d64a571f99, sni: s1.hazz.win, skip-cert-verify: true, udp: true}
+  - {name: 日本NTT-2号, server: 164.70.68.67, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
   - {name: US 008, server: inap008.xmrth-node.xyz, port: 12265, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 004, server: hkaz4.xmrth-node.xyz, port: 15380, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 006, server: hkaz6.xmrth-node.xyz, port: 13890, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 009, server: hkaz009.xmrth-node.xyz, port: 16075, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: CA 001, server: calin001.xmrth-node.xyz, port: 15572, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: UK 002, server: ukaws002.xmrth-node.xyz, port: 10292, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR A 001, server: hkaz1.xmrth-node.xyz, port: 16072, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US 004, server: inap004.xmrth-node.xyz, port: 15671, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US 003, server: inap003.xmrth-node.xyz, port: 11565, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 007, server: hkaz007.xmrth-node.xyz, port: 15637, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 001, server: hkaz001.xmrth-node.xyz, port: 16063, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR A 004, server: hkaz4.xmrth-node.xyz, port: 15379, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR A 006, server: hkaz6.xmrth-node.xyz, port: 15907, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 007, server: sgaws007.xmrth-node.xyz, port: 15892, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 005, server: hkaz5.xmrth-node.xyz, port: 15839, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: UK 001, server: uklin001.xmrth-node.xyz, port: 15856, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: AU 001, server: aulin001.xmrth-node.xyz, port: 15647, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 004, server: hkaz004.xmrth-node.xyz, port: 15911, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 010, server: hkaz010.xmrth-node.xyz, port: 15964, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 003, server: hkaz003.xmrth-node.xyz, port: 15910, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 008, server: hkaz008.xmrth-node.xyz, port: 15897, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 004, server: sgaws004.xmrth-node.xyz, port: 14415, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 102, server: hkaz2.xmrth-node.xyz, port: 16077, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 003, server: jpaz3.xmrth-node.xyz, port: 15944, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 104, server: jpaz4.xmrth-node.xyz, port: 15879, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 105, server: jpaz5.xmrth-node.xyz, port: 15414, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 106, server: jpaz6.xmrth-node.xyz, port: 15418, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 001, server: jpaz1.xmrth-node.xyz, port: 11178, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN A 002, server: hkaz2.xmrth-node.xyz, port: 15912, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG 001, server: sgaws001.xmrth-node.xyz, port: 15967, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR A 002, server: hkaz2.xmrth-node.xyz, port: 15655, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: SG A 003, server: hkaz3.xmrth-node.xyz, port: 14389, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 006, server: jpaws006.xmrth-node.xyz, port: 15863, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 007, server: kraws007.xmrth-node.xyz, port: 15659, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 004, server: kraws004.xmrth-node.xyz, port: 15975, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 001, server: kraws001.xmrth-node.xyz, port: 15859, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN B 002, server: jpaz2.xmrth-node.xyz, port: 15933, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN B 001, server: jpaz1.xmrth-node.xyz, port: 11032, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN B 003, server: jpaz3.xmrth-node.xyz, port: 15943, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR A 007, server: hkaz7.xmrth-node.xyz, port: 15908, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: IN A 001, server: hkaz1.xmrth-node.xyz, port: 16066, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 105, server: hkaz5.xmrth-node.xyz, port: 15904, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: 德国-1号 | 解锁流媒体, server: 80.78.132.177, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
+  - {name: 越南-3号, server: 103.173.255.228, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
+  - {name: "TG: https://t.me/Goguolichengo", server: 203.138.98.199, port: 28443, type: trojan, password: fd8bdab1-ca58-460c-94f5-8260a730e006, skip-cert-verify: true, udp: true}
+  - {name: 美国(yudou66.com 玉豆分享), server: v125.v2dns.bar, port: 80, type: vmess, uuid: 0c68af8a-961a-3065-a3a7-1800ebc70bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v1252N93nZez6Py, ws-headers: {Host: v125.v2dns.bar}, udp: true}
   - {name: IN A 003, server: hkaz3.xmrth-node.xyz, port: 14390, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 003, server: jplin003.xmrth-node.xyz, port: 15901, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 005, server: jplin005.xmrth-node.xyz, port: 15698, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 102, server: jpaz2.xmrth-node.xyz, port: 14025, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 006, server: jpaz6.xmrth-node.xyz, port: 13871, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 101, server: jpaz1.xmrth-node.xyz, port: 15624, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 002, server: jpaz2.xmrth-node.xyz, port: 15888, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 005, server: jpaz5.xmrth-node.xyz, port: 13870, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 103, server: jpaz3.xmrth-node.xyz, port: 15945, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP B 004, server: jpaz4.xmrth-node.xyz, port: 15421, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 103, server: hkaz3.xmrth-node.xyz, port: 16078, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: US B 002, server: jpaz2.xmrth-node.xyz, port: 10141, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 006, server: kraws006.xmrth-node.xyz, port: 15949, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: JP 002, server: jpaws002.xmrth-node.xyz, port: 15665, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: KR 002, server: kraws002.xmrth-node.xyz, port: 15868, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: HK 101, server: hkaz1.xmrth-node.xyz, port: 16076, type: vmess, uuid: 30670cc5-0160-3ec8-98d5-606237ec5169, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: www.baidu.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -368,360 +132,126 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - 香港DMIT-广州微软
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 台湾-2号 | 解锁流媒体
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - 台湾-1号 | 解锁流媒体
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -737,88 +267,29 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_243
-      - US B 003
-      - SG A 007
-      - TW A 1
-      - 台湾家宽-上海微软
-      - 香港DMIT-上海微软
-      - US B 004
-      - TW B 2
-      - TW B 1
-      - 香港DMIT-广州微软
-      - US 006
-      - 香港BGP-广州微软
-      - 台湾家宽-广州微软
-      - US B 001
-      - HK 107
-      - TW 2
-      - US 007
-      - US 005
-      - US 001
-      - HK 106
-      - HK 006
+      - 台湾-河南移动负载均衡(中转) | 解锁流媒体
+      - 台湾-广州移动2负载均衡(中转) | 解锁流媒体
+      - 越南 | 广州移动2(中转)
+      - 台湾-广州移动负载均衡(中转) | 解锁流媒体
+      - 越南-1号
       - Relay_🇨🇳CN-🇨🇳CN_252
-      - HK 005
-      - TW 1
+      - CN_243
+      - CN 腾讯云
+      - CN_207 | 7.03Mb
+      - 台湾-2号 | 解锁流媒体
+      - 越南-2号
+      - 台湾Hinet | 解锁流媒体
+      - 台湾-3号 | 解锁流媒体
+      - CN_203 | 3.88Mb
+      - 台湾-1号 | 解锁流媒体
+      - US_1526
+      - 日本NTT-2号
       - US 008
-      - SG A 004
-      - SG A 006
-      - HK 009
-      - CA 001
-      - UK 002
-      - KR A 001
-      - US 004
-      - US 003
-      - HK 007
-      - HK 001
-      - KR A 004
-      - KR A 006
-      - SG 007
-      - SG A 005
-      - UK 001
-      - AU 001
-      - HK 004
-      - HK 010
-      - HK 003
-      - HK 008
-      - SG 004
-      - HK 102
-      - JP B 003
-      - JP 104
-      - JP 105
-      - JP 106
-      - JP B 001
-      - IN A 002
-      - SG 001
-      - KR A 002
-      - SG A 003
-      - JP 006
-      - KR 007
-      - KR 004
-      - KR 001
-      - IN B 002
-      - IN B 001
-      - IN B 003
-      - KR A 007
-      - IN A 001
-      - HK 105
+      - 德国-1号 | 解锁流媒体
+      - 越南-3号
+      - "TG: https://t.me/Goguolichengo"
+      - 美国(yudou66.com 玉豆分享)
       - IN A 003
-      - JP 003
-      - JP 005
-      - JP 102
-      - JP B 006
-      - JP 101
-      - JP B 002
-      - JP B 005
-      - JP 103
-      - JP B 004
-      - HK 103
-      - US B 002
-      - KR 006
-      - JP 002
-      - KR 002
-      - HK 101
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
