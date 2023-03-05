@@ -5,283 +5,231 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中转 🇰🇷 KR 1 TG:@airproxies, server: in02.my1188.org, port: 63004, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
-  - {name: 中转 🇦🇷 AR 1 TG:@airproxies, server: in05.my1188.org, port: 63072, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ag01-cdn.myn1des.com}, udp: true}
-  - {name: 中转 🇯🇵 JP 2 TG:@airproxies, server: in04.my1188.org, port: 63086, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇯🇵 JP 4 TG:@nodpai, server: in02.my1188.org, port: 63086, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇺🇸 US 15 TG:@nodpai, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 49e7e141-6681-3d54-b802-c6840cfb665f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-us2, ws-headers: {Host: ushksw888x.vzwzasc.cn}, udp: true}
-  - {name: 中转 🇸🇬 SG 1 TG:@nodpai, server: in06.my1188.org, port: 63087, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: 中转 🇮🇳 IN 2 TG:@airproxies, server: in04.my1188.org, port: 63051, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: 中转 🇺🇸 US 13 TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa04, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇰🇷 KR 12 TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jgwhg01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇯🇵 JP 14 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /japanese03, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇹🇼 TW 7 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇹🇼 TW 4 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /scloudhinet01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇸🇬 SG 20 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp03, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇦🇪 AE 3 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ02, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇸🇬 SG 17 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇯🇵 JP 10 TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /lindoerb01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇦🇪 AE 2 TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ03, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇯🇵 JP 11 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /jp01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: V133-1.2x-Seoul, server: ssrsub.t03.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.t03.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇧🇷 BR 1 TG:@airproxies, server: in02.my1188.org, port: 63041, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-br01.covid19.rip}, udp: true}
-  - {name: 中转 🇬🇧 GB 2 TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /UK03, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇦🇪 AE 1 TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /JPZZ01, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇸🇬 SG 16 TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /doxjp04, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇸🇬 SG 2 TG:@nodpai, server: in02.my1188.org, port: 63087, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: V114-1.2x-Seoul, server: ssrsub.o04.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.o04.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: SG 7 TG:@airproxies, server: basics.efcloud.cc, port: 44001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, sni: basics.efcloud.cc, skip-cert-verify: true, udp: true}
-  - {name: V113-1.2x-Seoul, server: ssrsub.o03.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.o03.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: JP 6 TG:@nodpai, server: standard.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, sni: standard.efcloud.cc, skip-cert-verify: true, udp: true}
-  - {name: V134-1.2x-Seoul, server: ssrsub.t04.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.t04.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: TW 2 TG:@airproxies, server: standard.efcloud.cc, port: 42001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, sni: standard.efcloud.cc, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇧🇷 BR 2 TG:@nodpai, server: in01.my1188.org, port: 63041, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-br01.covid19.rip}, udp: true}
-  - {name: V112-1.2x-Chuncheon, server: ssrsub.o02.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.o02.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: US 2 TG:@airproxies, server: standard.efcloud.cc, port: 45001, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, sni: standard.efcloud.cc, skip-cert-verify: true, udp: true}
-  - {name: HK 20 TG:@airproxies, server: basics.efcloud.cc, port: 50000, type: trojan, password: 2f95d996-e911-4b1b-82b1-1d86bf2c517d, sni: basics.efcloud.cc, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇯🇵 JP 3 TG:@airproxies, server: in06.my1188.org, port: 63086, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: V111-1.2x-Chuncheon, server: ssrsub.o01.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.o01.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 5 TG:@nodpai, server: in01.my1188.org, port: 63087, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: sg-balancer.tencent.best}, udp: true}
-  - {name: PL 1 TG:@nodpai, server: hk-core.pvpgames.net, port: 63077, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pl01x.myn1des.com}, udp: true}
-  - {name: V132-1.2x-Chuncheon, server: ssrsub.t02.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.t02.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇺🇸 US 3 TG:@airproxies, server: in02.my1188.org, port: 63014, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: 中转 🇮🇳 IN 3 TG:@airproxies, server: in01.my1188.org, port: 63051, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: V121-1.2x-Sanjose, server: ssrsub.o11.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.o11.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇬🇧 GB 1 TG:@nodpai, server: in05.my1188.org, port: 63021, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uk01-cdn.airport-v2.com}, udp: true}
-  - {name: US 17 TG:@airproxies, server: us6b31-node.aiqiche123.com, port: 8190, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8653, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 12 TG:@airproxies, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 49e7e141-6681-3d54-b802-c6840cfb665f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp3, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
-  - {name: US 9 TG:@airproxies, server: us6b31-node.aiqiche123.com, port: 8190, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8653, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 16 TG:@nodpai, server: us6b31-node.aiqiche123.com, port: 8190, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8653, alterId: 10, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 特殊时期节点用不了的多更新下订阅, server: t01.tgfaka.com, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: t01.tgfaka.com, skip-cert-verify: true, udp: true}
-  - {name: V105-0.4x-Canada, server: t05.tgfaka.com, port: 56443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: t05.tgfaka.com, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 15 TG:@airproxies, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 49e7e141-6681-3d54-b802-c6840cfb665f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp4, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
-  - {name: 中转 🇰🇷 KR 3 TG:@airproxies, server: in01.my1188.org, port: 63004, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
-  - {name: V136-1.2x-Tokyo, server: ssrsub.t06.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.t06.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇯🇵 JP 1 TG:@airproxies, server: in01.my1188.org, port: 63086, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇭🇰 HK 28 TG:@nodpai, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 49e7e141-6681-3d54-b802-c6840cfb665f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-hk1, ws-headers: {Host: hksdwasd.vzwzasc.cn}, udp: true}
-  - {name: 中转 🇸🇬 SG 21 TG:@nodpai, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 49e7e141-6681-3d54-b802-c6840cfb665f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp2, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
-  - {name: 中转 🇷🇺 RU 2 TG:@nodpai, server: in02.my1188.org, port: 63071, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-ru01.myn1des.com}, udp: true}
-  - {name: V107-0.4x-Canada, server: t07.tgfaka.com, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: t07.tgfaka.com, skip-cert-verify: true, udp: true}
-  - {name: V117-1.2x-Osaka, server: ssrsub.o07.trojan.tel, port: 58443, type: trojan, password: a390948c-097b-456c-bde2-3acce8418b25, sni: ssrsub.o07.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇸🇬 SG 19 TG:@airproxies, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 49e7e141-6681-3d54-b802-c6840cfb665f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp1, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
-  - {name: 中转 🇸🇬 SG 13 TG:@nodpai, server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 49e7e141-6681-3d54-b802-c6840cfb665f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /tnt-awsxjp5, ws-headers: {Host: sgkhowaxawdx.vzwzasc.cn}, udp: true}
-  - {name: 中转 🇯🇵 JP 5 TG:@airproxies, server: in05.my1188.org, port: 63086, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 中转 🇭🇰 HK 34 TG:@airproxies, server: text1.xbywwcp.us, port: 80, type: vmess, uuid: c13208bf-d4f7-3e84-8f17-3d6c0830be2e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /by.xbygood.xyz, ws-headers: {Host: text1.xbywwcp.us}, udp: true}
-  - {name: 中转 🇨🇦 CA 1 TG:@nodpai, server: 221.131.165.72, port: 11902, type: vmess, uuid: 2cc15326-cd0f-34da-bbfb-f8cdc9b71eb2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中转 🇹🇼 TW 9 TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: c917ec50-f1fc-4ca8-a508-086b2d6903f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /schinet02, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: 中转 🇰🇷 KR 2 TG:@airproxies, server: in05.my1188.org, port: 63004, type: vmess, uuid: ec908e55-25f5-3da5-9d0b-3e4d20fa1a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai, server: 17.kccic2pa.xyz, port: 50017, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai, server: 500.sayitfree.website, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: 3307ba30-a638-490a-9910-672c4049a722, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai, server: 40.kccic2pa.xyz, port: 50040, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai, server: 23.kccic2pa.xyz, port: 50023, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V134-1.5x-Seoul, server: ssrsub.t04.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.t04.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 10 TG:@nodpai, server: gdyd.aikun.online, port: 38343, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3, udp: true}
+  - {name: Relay 🇬🇧 United Kingdom 01 TG:@nodpai, server: 26.kccic2pa.xyz, port: 50026, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai, server: 31.kccic2pa.xyz, port: 50031, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai, server: 42.kccic2pa.xyz, port: 50042, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai, server: 32.kccic2pa.xyz, port: 50032, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V133-1.5x-Seoul, server: ssrsub.t03.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.t03.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai, server: 37.kccic2pa.xyz, port: 50037, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国BGP中转2丨白嫖机场.com, server: dd2.bestcloud.tk, port: 443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /2, ws-headers: {Host: uk3.mybestjj.com}, udp: true}
+  - {name: 梦歌|广港BGP_19, server: uaejs.stablize.top, port: 443, type: trojan, password: 3993dc85-ac62-4afb-b0f0-c941d62a1cbf, sni: uaejs.stablize.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore 02 TG:@nodpai, server: dl-sg1.steamdownload.top, port: 50000, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: dl-sg1.steamdownload.top, skip-cert-verify: true, udp: true}
+  - {name: Singapore 03 TG:@nodpai, server: dl-sg3.steamdownload.top, port: 50000, type: trojan, password: c30b14da-adac-4bb3-ac27-c5759d4890ac, sni: dl-sg3.steamdownload.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇬🇧 United Kingdom 02 TG:@nodpai, server: 25.kccic2pa.xyz, port: 50025, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Singapore(ChatGPT) 01 TG:@nodpai, server: dl-sg2.steamdownload.top, port: 50000, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: dl-sg2.steamdownload.top, skip-cert-verify: true, udp: true}
+  - {name: 香港5|免流|优化| x2, server: hk5.microsoftjs.top, port: 443, type: trojan, password: cba70996-88fd-4495-b1bc-ad12f1017546, sni: hk5.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 印度1|免流|优化, server: in1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai, server: 14.29.124.168, port: 24000, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 日本B | Anti-DDos |0.7x, server: dbamwvb.76898102.xyz, port: 2082, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tadabfw, ws-headers: {Host: dbamwvb.76898102.xyz}, udp: true}
+  - {name: 美国东部阿什本2 | 0.5x, server: asbawufh.114514782.xyz, port: 2052, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /auvbwbs, ws-headers: {Host: asbawufh.114514782.xyz}, udp: true}
+  - {name: 英国BGP中转3丨白嫖机场.com, server: dd3.bestcloud.tk, port: 443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /2, ws-headers: {Host: uk3.mybestjj.com}, udp: true}
+  - {name: Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai, server: 21.kccic2pa.xyz, port: 50021, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡2 | 1x, server: amstdtre.76898102.xyz, port: 2095, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adwrfeyiyuisfesf, ws-headers: {Host: amstdtre.76898102.xyz}, udp: true}
+  - {name: 日本D | Anti-DDos |0.3x, server: dbamwvb.76898102.xyz, port: 2082, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tadabfw, ws-headers: {Host: dbamwvb.76898102.xyz}, udp: true}
+  - {name: 香港-光速中转03, server: b3.bestcloud.tk, port: 8443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1653531, ws-headers: {Host: hk1.mybestjj.com}, udp: true}
+  - {name: 美国西部凤凰城2 | 0.5x, server: jpntgrwq.114514782.xyz, port: 2052, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /miaoshenzbck, ws-headers: {Host: jpntgrwq.114514782.xyz}, udp: true}
+  - {name: Singapore(ChatGPT) 06 TG:@nodpai, server: 43.134.236.153, port: 61590, type: vmess, uuid: d318b489-19b7-4a45-84d7-1320d05dc10d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sg4/getData, ws-headers: {Host: sg4.linkeden.co}, udp: true}
+  - {name: 韩国2|免流|优化| x2, server: kr2.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr2.microsoftjs.top}, udp: true}
+  - {name: 巴西1 | 0.5x, server: baawftvbh.76898102.xyz, port: 2052, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bxqmiao, ws-headers: {Host: baawftvbh.76898102.xyz}, udp: true}
+  - {name: 印度1|免流|优化 2, server: in1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: V148-1x-Ashburn, server: ssrsub.t18.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.t18.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 香港-光速中转06, server: b6.bestcloud.tk, port: 8443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1653531, ws-headers: {Host: hk1.mybestjj.com}, udp: true}
+  - {name: 美国-光速中转04, server: b4.bestcloud.tk, port: 8443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1654431, ws-headers: {Host: us2.mybestjj.com}, udp: true}
+  - {name: 印度1|免流|优化| x2, server: in1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 美国4|免流|优化| x3, server: us4.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub, server: o108.tgfaka.com, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: o108.tgfaka.com, skip-cert-verify: true, udp: true}
+  - {name: 日本3|免流|优化| x2, server: jp3.microsoftjs.top, port: 443, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: 台湾2, server: tw2.microsoftjs.top, port: 443, type: trojan, password: cba70996-88fd-4495-b1bc-ad12f1017546, sni: tw2.microsoftjs.top, skip-cert-verify: true, udp: true}
+  - {name: 梦歌|广港BGP_59, server: iljs.stablize.top, port: 443, type: trojan, password: 3993dc85-ac62-4afb-b0f0-c941d62a1cbf, sni: iljs.stablize.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国1|免流|优化, server: kr1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
+  - {name: V114-1.5x-Seoul, server: ssrsub.o04.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.o04.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 梦歌|广港BGP_73, server: uaejs.stablize.top, port: 443, type: trojan, password: 3993dc85-ac62-4afb-b0f0-c941d62a1cbf, sni: uaejs.stablize.top, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai, server: hk80-2.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: dcea7f3e-98ba-4ac8-a294-5092dc381a57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/, ws-headers: {Host: www.baidu.com}, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 11 TG:@nodpai, server: 04.kccic2pa.xyz, port: 50004, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Germany(ChatGPT) 01 TG:@nodpai, server: 95.216.183.164, port: 11111, type: vmess, uuid: 60dcd710-a1a1-4ad7-b0df-47aa98e62b6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /@parsashonam, ws-headers: {Host: 95.216.183.164}, udp: true}
+  - {name: Russia 01 TG:@nodpai, server: insaneguo2333.top, port: 443, type: trojan, password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1, sni: insaneguo2333.top, skip-cert-verify: true, udp: true}
+  - {name: Germany(ChatGPT) 02 TG:@nodpai, server: stonebreak.online, port: 443, type: trojan, password: xl87654321, sni: stonebreak.online, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇭🇰 Hong Kong 09 TG:@nodpai, server: 06.kccic2pa.xyz, port: 50006, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay 🇸🇬 Singapore 05 TG:@nodpai, server: r97q.cdn.node.a.tddns-ounk.com, port: 13361, type: vmess, uuid: 44b418e7-1cf3-3b37-bd6f-10d96874d1af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -300,287 +248,242 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 梦歌|广港BGP_19
+      - 香港5|免流|优化| x2
+      - 香港-光速中转03
+      - 香港-光速中转06
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 梦歌|广港BGP_73
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -596,71 +499,58 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中转 🇰🇷 KR 1 TG:@airproxies
-      - 中转 🇦🇷 AR 1 TG:@airproxies
-      - 中转 🇯🇵 JP 2 TG:@airproxies
-      - 中转 🇯🇵 JP 4 TG:@nodpai
-      - 中转 🇺🇸 US 15 TG:@nodpai
-      - 中转 🇸🇬 SG 1 TG:@nodpai
-      - 中转 🇮🇳 IN 2 TG:@airproxies
-      - 中转 🇺🇸 US 13 TG:@airproxies
-      - 中转 🇰🇷 KR 12 TG:@airproxies
-      - 中转 🇯🇵 JP 14 TG:@nodpai
-      - 中转 🇹🇼 TW 7 TG:@nodpai
-      - 中转 🇹🇼 TW 4 TG:@nodpai
-      - 中转 🇸🇬 SG 20 TG:@nodpai
-      - 中转 🇦🇪 AE 3 TG:@nodpai
-      - 中转 🇸🇬 SG 17 TG:@nodpai
-      - 中转 🇯🇵 JP 10 TG:@airproxies
-      - 中转 🇦🇪 AE 2 TG:@airproxies
-      - 中转 🇯🇵 JP 11 TG:@nodpai
-      - V133-1.2x-Seoul
-      - 中转 🇧🇷 BR 1 TG:@airproxies
-      - 中转 🇬🇧 GB 2 TG:@airproxies
-      - 中转 🇦🇪 AE 1 TG:@airproxies
-      - 中转 🇸🇬 SG 16 TG:@nodpai
-      - 中转 🇸🇬 SG 2 TG:@nodpai
-      - V114-1.2x-Seoul
-      - SG 7 TG:@airproxies
-      - V113-1.2x-Seoul
-      - JP 6 TG:@nodpai
-      - V134-1.2x-Seoul
-      - TW 2 TG:@airproxies
-      - 中转 🇧🇷 BR 2 TG:@nodpai
-      - V112-1.2x-Chuncheon
-      - US 2 TG:@airproxies
-      - HK 20 TG:@airproxies
-      - 中转 🇯🇵 JP 3 TG:@airproxies
-      - V111-1.2x-Chuncheon
-      - 中转 🇸🇬 SG 5 TG:@nodpai
-      - PL 1 TG:@nodpai
-      - V132-1.2x-Chuncheon
-      - 中转 🇺🇸 US 3 TG:@airproxies
-      - 中转 🇮🇳 IN 3 TG:@airproxies
-      - V121-1.2x-Sanjose
-      - 中转 🇬🇧 GB 1 TG:@nodpai
-      - US 17 TG:@airproxies
-      - 中转 🇸🇬 SG 12 TG:@airproxies
-      - US 9 TG:@airproxies
-      - US 16 TG:@nodpai
-      - 特殊时期节点用不了的多更新下订阅
-      - V105-0.4x-Canada
-      - 中转 🇸🇬 SG 15 TG:@airproxies
-      - 中转 🇰🇷 KR 3 TG:@airproxies
-      - V136-1.2x-Tokyo
-      - 中转 🇯🇵 JP 1 TG:@airproxies
-      - 中转 🇭🇰 HK 28 TG:@nodpai
-      - 中转 🇸🇬 SG 21 TG:@nodpai
-      - 中转 🇷🇺 RU 2 TG:@nodpai
-      - V107-0.4x-Canada
-      - V117-1.2x-Osaka
-      - 中转 🇸🇬 SG 19 TG:@airproxies
-      - 中转 🇸🇬 SG 13 TG:@nodpai
-      - 中转 🇯🇵 JP 5 TG:@airproxies
-      - 中转 🇭🇰 HK 34 TG:@airproxies
-      - 中转 🇨🇦 CA 1 TG:@nodpai
-      - 中转 🇹🇼 TW 9 TG:@airproxies
-      - 中转 🇰🇷 KR 2 TG:@airproxies
+      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
+      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
+      - V134-1.5x-Seoul
+      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
+      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
+      - V133-1.5x-Seoul
+      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
+      - 英国BGP中转2丨白嫖机场.com
+      - 梦歌|广港BGP_19
+      - Singapore 02 TG:@nodpai
+      - Singapore 03 TG:@nodpai
+      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
+      - Singapore(ChatGPT) 01 TG:@nodpai
+      - 香港5|免流|优化| x2
+      - 印度1|免流|优化
+      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
+      - 日本B | Anti-DDos |0.7x
+      - 美国东部阿什本2 | 0.5x
+      - 英国BGP中转3丨白嫖机场.com
+      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
+      - 新加坡2 | 1x
+      - 日本D | Anti-DDos |0.3x
+      - 香港-光速中转03
+      - 美国西部凤凰城2 | 0.5x
+      - Singapore(ChatGPT) 06 TG:@nodpai
+      - 韩国2|免流|优化| x2
+      - 巴西1 | 0.5x
+      - 印度1|免流|优化 2
+      - V148-1x-Ashburn
+      - 香港-光速中转06
+      - 美国-光速中转04
+      - 印度1|免流|优化| x2
+      - 美国4|免流|优化| x3
+      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
+      - 日本3|免流|优化| x2
+      - 台湾2
+      - 梦歌|广港BGP_59
+      - 韩国1|免流|优化
+      - V114-1.5x-Seoul
+      - 梦歌|广港BGP_73
+      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
+      - Germany(ChatGPT) 01 TG:@nodpai
+      - Russia 01 TG:@nodpai
+      - Germany(ChatGPT) 02 TG:@nodpai
+      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
+      - Relay 🇸🇬 Singapore 05 TG:@nodpai
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
