@@ -5,231 +5,187 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai, server: 17.kccic2pa.xyz, port: 50017, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai, server: 500.sayitfree.website, port: 61003, type: ss, cipher: chacha20-ietf-poly1305, password: 3307ba30-a638-490a-9910-672c4049a722, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai, server: 40.kccic2pa.xyz, port: 50040, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai, server: 23.kccic2pa.xyz, port: 50023, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V134-1.5x-Seoul, server: ssrsub.t04.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.t04.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 10 TG:@nodpai, server: gdyd.aikun.online, port: 38343, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 01 TG:@nodpai, server: 26.kccic2pa.xyz, port: 50026, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai, server: 31.kccic2pa.xyz, port: 50031, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai, server: 42.kccic2pa.xyz, port: 50042, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai, server: 32.kccic2pa.xyz, port: 50032, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V133-1.5x-Seoul, server: ssrsub.t03.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.t03.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai, server: 37.kccic2pa.xyz, port: 50037, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国BGP中转2丨白嫖机场.com, server: dd2.bestcloud.tk, port: 443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /2, ws-headers: {Host: uk3.mybestjj.com}, udp: true}
-  - {name: 梦歌|广港BGP_19, server: uaejs.stablize.top, port: 443, type: trojan, password: 3993dc85-ac62-4afb-b0f0-c941d62a1cbf, sni: uaejs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore 02 TG:@nodpai, server: dl-sg1.steamdownload.top, port: 50000, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: dl-sg1.steamdownload.top, skip-cert-verify: true, udp: true}
-  - {name: Singapore 03 TG:@nodpai, server: dl-sg3.steamdownload.top, port: 50000, type: trojan, password: c30b14da-adac-4bb3-ac27-c5759d4890ac, sni: dl-sg3.steamdownload.top, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇬🇧 United Kingdom 02 TG:@nodpai, server: 25.kccic2pa.xyz, port: 50025, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Singapore(ChatGPT) 01 TG:@nodpai, server: dl-sg2.steamdownload.top, port: 50000, type: trojan, password: d7fdbf6d-6c9b-41af-924f-5944cd88dcf5, sni: dl-sg2.steamdownload.top, skip-cert-verify: true, udp: true}
-  - {name: 香港5|免流|优化| x2, server: hk5.microsoftjs.top, port: 443, type: trojan, password: cba70996-88fd-4495-b1bc-ad12f1017546, sni: hk5.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 印度1|免流|优化, server: in1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai, server: 14.29.124.168, port: 24000, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 日本B | Anti-DDos |0.7x, server: dbamwvb.76898102.xyz, port: 2082, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tadabfw, ws-headers: {Host: dbamwvb.76898102.xyz}, udp: true}
-  - {name: 美国东部阿什本2 | 0.5x, server: asbawufh.114514782.xyz, port: 2052, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /auvbwbs, ws-headers: {Host: asbawufh.114514782.xyz}, udp: true}
-  - {name: 英国BGP中转3丨白嫖机场.com, server: dd3.bestcloud.tk, port: 443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /2, ws-headers: {Host: uk3.mybestjj.com}, udp: true}
-  - {name: Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai, server: 21.kccic2pa.xyz, port: 50021, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡2 | 1x, server: amstdtre.76898102.xyz, port: 2095, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /adwrfeyiyuisfesf, ws-headers: {Host: amstdtre.76898102.xyz}, udp: true}
-  - {name: 日本D | Anti-DDos |0.3x, server: dbamwvb.76898102.xyz, port: 2082, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /tadabfw, ws-headers: {Host: dbamwvb.76898102.xyz}, udp: true}
-  - {name: 香港-光速中转03, server: b3.bestcloud.tk, port: 8443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1653531, ws-headers: {Host: hk1.mybestjj.com}, udp: true}
-  - {name: 美国西部凤凰城2 | 0.5x, server: jpntgrwq.114514782.xyz, port: 2052, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /miaoshenzbck, ws-headers: {Host: jpntgrwq.114514782.xyz}, udp: true}
-  - {name: Singapore(ChatGPT) 06 TG:@nodpai, server: 43.134.236.153, port: 61590, type: vmess, uuid: d318b489-19b7-4a45-84d7-1320d05dc10d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sg4/getData, ws-headers: {Host: sg4.linkeden.co}, udp: true}
-  - {name: 韩国2|免流|优化| x2, server: kr2.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr2.microsoftjs.top}, udp: true}
-  - {name: 巴西1 | 0.5x, server: baawftvbh.76898102.xyz, port: 2052, type: vmess, uuid: f1552f53-e5e1-30dc-8e2f-22285b7137fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bxqmiao, ws-headers: {Host: baawftvbh.76898102.xyz}, udp: true}
-  - {name: 印度1|免流|优化 2, server: in1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: V148-1x-Ashburn, server: ssrsub.t18.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.t18.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 香港-光速中转06, server: b6.bestcloud.tk, port: 8443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1653531, ws-headers: {Host: hk1.mybestjj.com}, udp: true}
-  - {name: 美国-光速中转04, server: b4.bestcloud.tk, port: 8443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /1654431, ws-headers: {Host: us2.mybestjj.com}, udp: true}
-  - {name: 印度1|免流|优化| x2, server: in1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 美国4|免流|优化| x3, server: us4.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub, server: o108.tgfaka.com, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: o108.tgfaka.com, skip-cert-verify: true, udp: true}
-  - {name: 日本3|免流|优化| x2, server: jp3.microsoftjs.top, port: 443, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: 台湾2, server: tw2.microsoftjs.top, port: 443, type: trojan, password: cba70996-88fd-4495-b1bc-ad12f1017546, sni: tw2.microsoftjs.top, skip-cert-verify: true, udp: true}
-  - {name: 梦歌|广港BGP_59, server: iljs.stablize.top, port: 443, type: trojan, password: 3993dc85-ac62-4afb-b0f0-c941d62a1cbf, sni: iljs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: 韩国1|免流|优化, server: kr1.microsoftjs.top, port: 80, type: vmess, uuid: cba70996-88fd-4495-b1bc-ad12f1017546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, ws-headers: {Host: tlu.dl.delivery.mp.microsoft.com}, udp: true}
-  - {name: V114-1.5x-Seoul, server: ssrsub.o04.trojan.tel, port: 80, type: trojan, password: 6ba745ca-823a-4643-8f4e-22997ca67a2f, sni: ssrsub.o04.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 梦歌|广港BGP_73, server: uaejs.stablize.top, port: 443, type: trojan, password: 3993dc85-ac62-4afb-b0f0-c941d62a1cbf, sni: uaejs.stablize.top, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai, server: hk80-2.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: dcea7f3e-98ba-4ac8-a294-5092dc381a57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /zh-cn/, ws-headers: {Host: www.baidu.com}, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 11 TG:@nodpai, server: 04.kccic2pa.xyz, port: 50004, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Germany(ChatGPT) 01 TG:@nodpai, server: 95.216.183.164, port: 11111, type: vmess, uuid: 60dcd710-a1a1-4ad7-b0df-47aa98e62b6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /@parsashonam, ws-headers: {Host: 95.216.183.164}, udp: true}
-  - {name: Russia 01 TG:@nodpai, server: insaneguo2333.top, port: 443, type: trojan, password: 1d0a80ca-0f96-4016-ac51-c284dedd28a1, sni: insaneguo2333.top, skip-cert-verify: true, udp: true}
-  - {name: Germany(ChatGPT) 02 TG:@nodpai, server: stonebreak.online, port: 443, type: trojan, password: xl87654321, sni: stonebreak.online, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇭🇰 Hong Kong 09 TG:@nodpai, server: 06.kccic2pa.xyz, port: 50006, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay 🇸🇬 Singapore 05 TG:@nodpai, server: r97q.cdn.node.a.tddns-ounk.com, port: 13361, type: vmess, uuid: 44b418e7-1cf3-3b37-bd6f-10d96874d1af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, ws-headers: {Host: r97q.cdn.node.a.tddns-ounk.com}, udp: true}
+  - {name: 美国04｜中转线路, server: cdn.jike.cyou, port: 50013, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国02｜支持ChatGPT, server: cdn.jike.cyou, port: 50023, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港02｜支持NetFlix, server: cdn.jike.cyou, port: 50019, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50018, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50046, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国02｜中转线路 | 倍率0.5, server: cdn.jike.cyou, port: 50013, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 以色列01｜中转线路 | 倍率0.5, server: cdn.jike.cyou, port: 50032, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 乌克兰01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50049, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡01｜中转线路, server: cdn.jike.cyou, port: 50014, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 挪威01 | ChatGPT | 倍率0.1, server: cdn.jike.cyou, port: 50045, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本04｜中转线路 | 倍率0.5, server: cdn.jike.cyou, port: 50040, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国01｜支持NetFlix, server: cdn.jike.cyou, port: 50018, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国02｜中转线路, server: cdn.jike.cyou, port: 50031, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港02｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50019, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 瑞典01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50048, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港10｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50054, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港07｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50025, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 哈萨克斯坦|ChatGPT|倍率0.1, server: cdn.jike.cyou, port: 50043, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港09｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50053, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡02｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50015, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50017, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港06｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50039, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国01｜中转线路, server: cdn.jike.cyou, port: 50017, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡02｜中转线路, server: cdn.jike.cyou, port: 50015, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 约翰内斯堡 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50051, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港05｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50038, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾00｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50055, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 爱沙尼亚 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50050, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港03｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50029, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港04｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50034, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50014, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港00｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50052, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国02｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50031, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50030, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V005-1.5x-US-付费推荐:dlj.tf/ssrsub, server: ssrsub.v03.trojan.tel, port: 40020, type: vmess, uuid: c8e877d3-2909-416d-aa5a-6d1722a374bd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: ssrsub.v03.trojan.tel, grpc-opts: {grpc-service-name: ssrsub.v03.trojan.tel}, udp: true}
+  - {name: V118-1x-Sanjose, server: ssrsub.o08.trojan.tel, port: 80, type: trojan, password: c8e877d3-2909-416d-aa5a-6d1722a374bd, sni: ssrsub.o08.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V149-0.5x-Phoenix, server: ssrsub.t19.trojan.tel, port: 80, type: trojan, password: c8e877d3-2909-416d-aa5a-6d1722a374bd, sni: ssrsub.t19.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 美国4-0.1x, server: downloadvip.cfd, port: 443, type: vmess, uuid: 6e19ee1e-5391-4958-aafa-e0eab029a157, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /djjc/us4, ws-headers: {Host: us4.djjc.sbs}, udp: true}
+  - {name: T101-0.1x-RU-付费推荐:dlj.tf/ssrsub, server: ssrsub.v02.trojan.tel, port: 80, type: trojan, password: c8e877d3-2909-416d-aa5a-6d1722a374bd, sni: ssrsub.v02.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 德国S丨白嫖机场.com, server: uu.bestcloud.tk, port: 80, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1654431, ws-headers: {Host: de3.mybestjj.com}, udp: true}
+  - {name: 英国01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50047, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -248,242 +204,203 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 梦歌|广港BGP_19
-      - 香港5|免流|优化| x2
-      - 香港-光速中转03
-      - 香港-光速中转06
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 梦歌|广港BGP_73
+      - 香港02｜支持NetFlix
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -499,58 +416,47 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay 🇺🇸 United States(ChatGPT) 09 TG:@nodpai
-      - Relay 🇹🇼 Taiwan(ChatGPT) 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 08 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 04 TG:@nodpai
-      - V134-1.5x-Seoul
-      - Relay 🇭🇰 Hong Kong 10 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 01 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 05 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 06 TG:@nodpai
-      - Relay 🇺🇸 United States(ChatGPT) 03 TG:@nodpai
-      - V133-1.5x-Seoul
-      - Relay 🇹🇷 Turkey(ChatGPT) 01 TG:@nodpai
-      - 英国BGP中转2丨白嫖机场.com
-      - 梦歌|广港BGP_19
-      - Singapore 02 TG:@nodpai
-      - Singapore 03 TG:@nodpai
-      - Relay 🇬🇧 United Kingdom 02 TG:@nodpai
-      - Singapore(ChatGPT) 01 TG:@nodpai
-      - 香港5|免流|优化| x2
-      - 印度1|免流|优化
-      - Relay 🇹🇼 Taiwan(ChatGPT) 02 TG:@nodpai
-      - 日本B | Anti-DDos |0.7x
-      - 美国东部阿什本2 | 0.5x
-      - 英国BGP中转3丨白嫖机场.com
-      - Relay 🇺🇸 United States(ChatGPT) 07 TG:@nodpai
-      - 新加坡2 | 1x
-      - 日本D | Anti-DDos |0.3x
-      - 香港-光速中转03
-      - 美国西部凤凰城2 | 0.5x
-      - Singapore(ChatGPT) 06 TG:@nodpai
-      - 韩国2|免流|优化| x2
-      - 巴西1 | 0.5x
-      - 印度1|免流|优化 2
-      - V148-1x-Ashburn
-      - 香港-光速中转06
-      - 美国-光速中转04
-      - 印度1|免流|优化| x2
-      - 美国4|免流|优化| x3
-      - V104-0.1x-Russia-付费推荐:dlj.tf/ssrsub
-      - 日本3|免流|优化| x2
-      - 台湾2
-      - 梦歌|广港BGP_59
-      - 韩国1|免流|优化
-      - V114-1.5x-Seoul
-      - 梦歌|广港BGP_73
-      - Relay 🇭🇰 Hong Kong(ChatGPT) 08 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 11 TG:@nodpai
-      - Germany(ChatGPT) 01 TG:@nodpai
-      - Russia 01 TG:@nodpai
-      - Germany(ChatGPT) 02 TG:@nodpai
-      - Relay 🇭🇰 Hong Kong 09 TG:@nodpai
-      - Relay 🇸🇬 Singapore 05 TG:@nodpai
+      - 美国04｜中转线路
+      - 美国02｜支持ChatGPT
+      - 香港02｜支持NetFlix
+      - 美国01｜IEPL线路 | 倍率1.0
+      - 荷兰01 | NetFlix | 倍率0.1
+      - 美国02｜中转线路 | 倍率0.5
+      - 以色列01｜中转线路 | 倍率0.5
+      - 乌克兰01 | NetFlix | 倍率0.1
+      - 新加坡01｜中转线路
+      - 挪威01 | ChatGPT | 倍率0.1
+      - 日本04｜中转线路 | 倍率0.5
+      - 美国01｜支持NetFlix
+      - 韩国02｜中转线路
+      - 香港02｜IEPL线路 | 倍率1.0
+      - 瑞典01 | NetFlix | 倍率0.1
+      - 香港10｜IEPL线路 | 倍率1.0
+      - 香港07｜IEPL线路 | 倍率1.0
+      - 哈萨克斯坦|ChatGPT|倍率0.1
+      - 香港09｜IEPL线路 | 倍率1.0
+      - 新加坡02｜IEPL线路 | 倍率1.0
+      - 韩国01｜IEPL线路 | 倍率1.0
+      - 香港06｜IEPL线路 | 倍率1.0
+      - 韩国01｜中转线路
+      - 新加坡02｜中转线路
+      - 约翰内斯堡 | NetFlix | 倍率0.1
+      - 香港05｜IEPL线路 | 倍率1.0
+      - 台湾00｜IEPL线路 | 倍率1.0
+      - 爱沙尼亚 | NetFlix | 倍率0.1
+      - 香港03｜IEPL线路 | 倍率1.0
+      - 香港04｜IEPL线路 | 倍率1.0
+      - 新加坡01｜IEPL线路 | 倍率1.0
+      - 香港00｜IEPL线路 | 倍率1.0
+      - 韩国02｜IEPL线路 | 倍率1.0
+      - 香港01｜IEPL线路 | 倍率1.0
+      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - V118-1x-Sanjose
+      - V149-0.5x-Phoenix
+      - 美国4-0.1x
+      - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
+      - 德国S丨白嫖机场.com
+      - 英国01 | NetFlix | 倍率0.1
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
