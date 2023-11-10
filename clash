@@ -5,187 +5,383 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国04｜中转线路, server: cdn.jike.cyou, port: 50013, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国02｜支持ChatGPT, server: cdn.jike.cyou, port: 50023, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港02｜支持NetFlix, server: cdn.jike.cyou, port: 50019, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50018, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50046, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国02｜中转线路 | 倍率0.5, server: cdn.jike.cyou, port: 50013, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 以色列01｜中转线路 | 倍率0.5, server: cdn.jike.cyou, port: 50032, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50049, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡01｜中转线路, server: cdn.jike.cyou, port: 50014, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 挪威01 | ChatGPT | 倍率0.1, server: cdn.jike.cyou, port: 50045, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本04｜中转线路 | 倍率0.5, server: cdn.jike.cyou, port: 50040, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国01｜支持NetFlix, server: cdn.jike.cyou, port: 50018, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国02｜中转线路, server: cdn.jike.cyou, port: 50031, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港02｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50019, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 瑞典01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50048, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港10｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50054, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港07｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50025, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 哈萨克斯坦|ChatGPT|倍率0.1, server: cdn.jike.cyou, port: 50043, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港09｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50053, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50015, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50017, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港06｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50039, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国01｜中转线路, server: cdn.jike.cyou, port: 50017, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡02｜中转线路, server: cdn.jike.cyou, port: 50015, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 约翰内斯堡 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50051, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港05｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50038, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾00｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50055, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 爱沙尼亚 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50050, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港03｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50029, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港04｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50034, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50014, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港00｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50052, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国02｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50031, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港01｜IEPL线路 | 倍率1.0, server: cdn.jike.cyou, port: 50030, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: V005-1.5x-US-付费推荐:dlj.tf/ssrsub, server: ssrsub.v03.trojan.tel, port: 40020, type: vmess, uuid: c8e877d3-2909-416d-aa5a-6d1722a374bd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: ssrsub.v03.trojan.tel, grpc-opts: {grpc-service-name: ssrsub.v03.trojan.tel}, udp: true}
-  - {name: V118-1x-Sanjose, server: ssrsub.o08.trojan.tel, port: 80, type: trojan, password: c8e877d3-2909-416d-aa5a-6d1722a374bd, sni: ssrsub.o08.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: V149-0.5x-Phoenix, server: ssrsub.t19.trojan.tel, port: 80, type: trojan, password: c8e877d3-2909-416d-aa5a-6d1722a374bd, sni: ssrsub.t19.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 美国4-0.1x, server: downloadvip.cfd, port: 443, type: vmess, uuid: 6e19ee1e-5391-4958-aafa-e0eab029a157, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /djjc/us4, ws-headers: {Host: us4.djjc.sbs}, udp: true}
-  - {name: T101-0.1x-RU-付费推荐:dlj.tf/ssrsub, server: ssrsub.v02.trojan.tel, port: 80, type: trojan, password: c8e877d3-2909-416d-aa5a-6d1722a374bd, sni: ssrsub.v02.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: 德国S丨白嫖机场.com, server: uu.bestcloud.tk, port: 80, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1654431, ws-headers: {Host: de3.mybestjj.com}, udp: true}
-  - {name: 英国01 | NetFlix | 倍率0.1, server: cdn.jike.cyou, port: 50047, type: vmess, uuid: 5f94882f-3d12-4f44-aff4-ef053022dd53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V148-1x-Ashburn, server: ssrsub.t18.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t18.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V001-0.1x-US-付费推荐:dlj.tf/ssrsub, server: cf1.trojan.tel, port: 2095, type: vmess, uuid: c78452f0-8489-43d8-87c6-68e55e3ce245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub-cf-v3.trojan.tel}, udp: true}
+  - {name: SG|VMS|公益|0.3x-2, server: 30.namesilo123.top, port: 80, type: vmess, uuid: 885e5817-5367-437e-890c-84ca4de8a7fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/grdhhgrdhhhhhhj?ed=2048", ws-headers: {Host: freesg.sanfen002.top}, udp: true}
+  - {name: SG|VMS|公益|0.3x-3, server: 31.namesilo123.top, port: 8080, type: vmess, uuid: 885e5817-5367-437e-890c-84ca4de8a7fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/grdhhgrdhhhhhhj?ed=2048", ws-headers: {Host: freesg.sanfen002.top}, udp: true}
+  - {name: +USA-03, server: dy.yingwuyun.cyou, port: 27304, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: V002-1.5x-US-付费推荐:dlj.tf/ssrsub, server: ssrsub.v03.trojan.tel, port: 8880, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.v03.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 英国1丨白嫖机场.com, server: 162.159.142.241, port: 80, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uk3-n18sby2c2uwobdbq.mybestjj.com}, udp: true}
+  - {name: T101-0.1x-RU-付费推荐:dlj.tf/ssrsub, server: ssrsub.v02.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.v02.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: +USA-02, server: ly.yingwuyun.cyou, port: 27304, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: V118-1x-Sanjose, server: ssrsub.o08.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.o08.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: USA-01, server: yy.yingwuyun.cyou, port: 27304, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: Singapore-02, server: ly.yingwuyun.cyou, port: 27301, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: 日本03, server: jp.nodegroups.ink, port: 33213, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本02, server: jp.nodegroups.ink, port: 33212, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本01-Netflix|Disney+|动画疯, server: jp.nodegroups.ink, port: 33211, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Japan-01, server: yy.yingwuyun.cyou, port: 27302, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: Japan-02, server: ly.yingwuyun.cyou, port: 27302, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: 实验性线路1|全节点轮询自动切换, server: hk.nodegroups.ink, port: 49001, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港04-Netflix|Disney+|HBO, server: hk.nodegroups.ink, port: 33218, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾02, server: tw.nodegroups.ink, port: 33207, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港01-Neflix|Disney+|HBO, server: hk.nodegroups.ink, port: 33203, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾03-Netflix|Disney+|动画疯, server: tw.nodegroups.ink, port: 33221, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Taiwan-01, server: yy.yingwuyun.cyou, port: 27305, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: Taiwan-02, server: ly.yingwuyun.cyou, port: 27305, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: V113-1.5x-Seoul, server: ssrsub.o03.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.o03.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: Singapore-03, server: dy.yingwuyun.cyou, port: 27301, type: ss, cipher: chacha20-ietf-poly1305, password: b94015c7-5989-4a9f-8918-ab51727bfe6c, udp: true}
+  - {name: V143-1x-Vinhedo, server: ssrsub.t13.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t13.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 日本9丨电报群@bp520, server: 162.159.142.239, port: 80, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jp3-lr87dmj9dg7gejde.mybestjj.com}, udp: true}
+  - {name: V132-0.5x-Chuncheon, server: ssrsub.t02.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t02.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V151-2x-Stockholm, server: ssrsub.t21.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t21.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 免费-日本4-Ver.4, server: jp04-vm0.entry.srthdw.art, port: 444, type: vmess, uuid: e92c3d3e-a1c7-3270-9463-ba9ea83280c2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub, server: cf1.trojan.tel, port: 8880, type: vmess, uuid: c78452f0-8489-43d8-87c6-68e55e3ce245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub-cf-v4.trojan.tel}, udp: true}
+  - {name: V145-1x-Melbourne, server: ssrsub.t15.trojan.tel, port: 443, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t15.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: SG|VMS|公益|0.3x-1, server: 29.namesilo123.top, port: 8880, type: vmess, uuid: 885e5817-5367-437e-890c-84ca4de8a7fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/grdhhgrdhhhhhhj?ed=2048", ws-headers: {Host: freesg.sanfen002.top}, udp: true}
+  - {name: V134-1.5x-Seoul, server: ssrsub.t04.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t04.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V114-1.5x-Seoul, server: ssrsub.o04.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.o04.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V153-1x-Mexico, server: ssrsub.t23.trojan.tel, port: 8880, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t23.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V003-0.1x-US-付费推荐:dlj.tf/ssrsub, server: cf1.trojan.tel, port: 2095, type: vmess, uuid: c78452f0-8489-43d8-87c6-68e55e3ce245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub-cf-v2.trojan.tel}, udp: true}
+  - {name: V004-0.1x-US-付费推荐:dlj.tf/ssrsub, server: cf2.trojan.tel, port: 8880, type: vmess, uuid: c78452f0-8489-43d8-87c6-68e55e3ce245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub-cf-v2.trojan.tel}, udp: true}
+  - {name: V002-0.1x-US-付费推荐:dlj.tf/ssrsub, server: cf2.trojan.tel, port: 8880, type: vmess, uuid: c78452f0-8489-43d8-87c6-68e55e3ce245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub-cf-v3.trojan.tel}, udp: true}
+  - {name: 美国3-解锁一切, server: 162.159.200.1, port: 80, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: us4.mybestjj.com}, udp: true}
+  - {name: 香港Trojan-轻量办公, server: hk3.visaapp.top, port: 49487, type: trojan, password: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, sni: hk3.visaapp.top, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯去Youtube广告, server: 45.144.2.113, port: 443, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: 45.144.2.113, grpc-opts: {grpc-service-name: 1654431}, udp: true}
+  - {name: 加拿大7丨电报群@bp520, server: 162.159.142.217, port: 80, type: vmess, uuid: 8d98b47f-2e2c-460d-ac06-9c07e1bb3569, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ca3-245f9361a74onogs.mybestjj.com}, udp: true}
+  - {name: 香港01-Neflix|Disney+|HBO 2, server: hk.flypig.cool, port: 33203, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港02-Neflix|Disney+|HBO, server: hk.flypig.cool, port: 33204, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港03-Netflix|Disney+|HBO, server: hk.flypig.cool, port: 33205, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港04-Netflix|Disney+|HBO 2, server: hk.flypig.cool, port: 33218, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本01-Netflix|Disney+|动画疯 2, server: jp.flypig.cool, port: 33211, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本02 2, server: jp.flypig.cool, port: 33212, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本03 2, server: jp.flypig.cool, port: 33213, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡01-Netflix|Disney+|动画疯, server: sg.flypig.cool, port: 33214, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡02, server: sg.flypig.cool, port: 33910, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡03, server: sg.flypig.cool, port: 33215, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国01-Netflix|Disney+|动画疯, server: us.flypig.cool, port: 33208, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国02, server: us.flypig.cool, port: 33209, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国03, server: us.flypig.cool, port: 33210, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国01-Netflix|Disney+|动画疯, server: kr.flypig.cool, port: 33216, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国02, server: kr.flypig.cool, port: 33217, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾01-Hinet|Netflix|Disney+|动画疯, server: tw.flypig.cool, port: 33206, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾02 2, server: tw.flypig.cool, port: 33207, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾03-Netflix|Disney+|动画疯 2, server: tw.flypig.cool, port: 33221, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 实验性线路1|全节点轮询自动切换 2, server: hk.flypig.cool, port: 49001, type: vmess, uuid: 2f5dd11f-8adc-32d4-a9a5-5a154a72b4a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Japan, server: proxy1.fanqiecloud.top, port: 26202, type: ss, cipher: chacha20-ietf-poly1305, password: 9dd54863-4adf-4b23-bb0c-6051eb365885, udp: true}
+  - {name: 美国圣何塞3, server: cfip.gay, port: 443, type: vmess, uuid: 3230db17-514c-415e-9b77-694ce0adf197, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/us2?ed=2048", ws-headers: {Host: us2.cou.gay}, udp: true}
+  - {name: V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2, server: cf1.trojan.tel, port: 8880, type: vmess, uuid: c78452f0-8489-43d8-87c6-68e55e3ce245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub-cf-v2.trojan.tel}, udp: true}
+  - {name: V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2, server: cf2.trojan.tel, port: 2095, type: vmess, uuid: c78452f0-8489-43d8-87c6-68e55e3ce245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: ssrsub-cf-v2.trojan.tel}, udp: true}
+  - {name: V111-0.5x-Chuncheon, server: ssrsub.o01.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.o01.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V112-0.5x-Chuncheon, server: ssrsub.o02.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.o02.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V119-1.5x-Singapore, server: ssrsub.o09.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.o09.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V131-0.5x-Chuncheon, server: ssrsub.t01.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t01.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V133-1.5x-Seoul, server: ssrsub.t03.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t03.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V141-0.5x-Saopaulo, server: ssrsub.t11.trojan.tel, port: 80, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t11.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: V154-1x-Chicago, server: ssrsub.t24.trojan.tel, port: 8880, type: trojan, password: c78452f0-8489-43d8-87c6-68e55e3ce245, sni: ssrsub.t24.trojan.tel, skip-cert-verify: true, udp: true}
+  - {name: 香港 1, server: s4.rilegoef.buzz, port: 51001, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 2, server: s4.rilegoef.buzz, port: 51002, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 3, server: s4.rilegoef.buzz, port: 51003, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 4, server: s4.rilegoef.buzz, port: 51004, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 1, server: e2.rilegoef.buzz, port: 52001, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 2, server: e2.rilegoef.buzz, port: 52002, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 3, server: e2.rilegoef.buzz, port: 52003, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 4, server: e2.rilegoef.buzz, port: 52004, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 1, server: s4.rilegoef.buzz, port: 53001, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 2, server: s4.rilegoef.buzz, port: 53002, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 3, server: s4.rilegoef.buzz, port: 53003, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 4, server: s4.rilegoef.buzz, port: 53004, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 1, server: e2.rilegoef.buzz, port: 54001, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 2, server: e2.rilegoef.buzz, port: 54002, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 3, server: e2.rilegoef.buzz, port: 54003, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 4, server: e2.rilegoef.buzz, port: 54004, type: vmess, uuid: 9e792c4e-31e7-4ac8-a6ae-efe6f3b8fc8f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -204,203 +400,403 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港02｜支持NetFlix
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - 香港Trojan-轻量办公
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -416,47 +812,96 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国04｜中转线路
-      - 美国02｜支持ChatGPT
-      - 香港02｜支持NetFlix
-      - 美国01｜IEPL线路 | 倍率1.0
-      - 荷兰01 | NetFlix | 倍率0.1
-      - 美国02｜中转线路 | 倍率0.5
-      - 以色列01｜中转线路 | 倍率0.5
-      - 乌克兰01 | NetFlix | 倍率0.1
-      - 新加坡01｜中转线路
-      - 挪威01 | ChatGPT | 倍率0.1
-      - 日本04｜中转线路 | 倍率0.5
-      - 美国01｜支持NetFlix
-      - 韩国02｜中转线路
-      - 香港02｜IEPL线路 | 倍率1.0
-      - 瑞典01 | NetFlix | 倍率0.1
-      - 香港10｜IEPL线路 | 倍率1.0
-      - 香港07｜IEPL线路 | 倍率1.0
-      - 哈萨克斯坦|ChatGPT|倍率0.1
-      - 香港09｜IEPL线路 | 倍率1.0
-      - 新加坡02｜IEPL线路 | 倍率1.0
-      - 韩国01｜IEPL线路 | 倍率1.0
-      - 香港06｜IEPL线路 | 倍率1.0
-      - 韩国01｜中转线路
-      - 新加坡02｜中转线路
-      - 约翰内斯堡 | NetFlix | 倍率0.1
-      - 香港05｜IEPL线路 | 倍率1.0
-      - 台湾00｜IEPL线路 | 倍率1.0
-      - 爱沙尼亚 | NetFlix | 倍率0.1
-      - 香港03｜IEPL线路 | 倍率1.0
-      - 香港04｜IEPL线路 | 倍率1.0
-      - 新加坡01｜IEPL线路 | 倍率1.0
-      - 香港00｜IEPL线路 | 倍率1.0
-      - 韩国02｜IEPL线路 | 倍率1.0
-      - 香港01｜IEPL线路 | 倍率1.0
-      - V005-1.5x-US-付费推荐:dlj.tf/ssrsub
-      - V118-1x-Sanjose
-      - V149-0.5x-Phoenix
-      - 美国4-0.1x
+      - V148-1x-Ashburn
+      - V001-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - SG|VMS|公益|0.3x-2
+      - SG|VMS|公益|0.3x-3
+      - +USA-03
+      - V002-1.5x-US-付费推荐:dlj.tf/ssrsub
+      - 英国1丨白嫖机场.com
       - T101-0.1x-RU-付费推荐:dlj.tf/ssrsub
-      - 德国S丨白嫖机场.com
-      - 英国01 | NetFlix | 倍率0.1
+      - +USA-02
+      - V118-1x-Sanjose
+      - USA-01
+      - Singapore-02
+      - 日本03
+      - 日本02
+      - 日本01-Netflix|Disney+|动画疯
+      - Japan-01
+      - Japan-02
+      - 实验性线路1|全节点轮询自动切换
+      - 香港04-Netflix|Disney+|HBO
+      - 台湾02
+      - 香港01-Neflix|Disney+|HBO
+      - 台湾03-Netflix|Disney+|动画疯
+      - Taiwan-01
+      - Taiwan-02
+      - V113-1.5x-Seoul
+      - Singapore-03
+      - V143-1x-Vinhedo
+      - 日本9丨电报群@bp520
+      - V132-0.5x-Chuncheon
+      - V151-2x-Stockholm
+      - 免费-日本4-Ver.4
+      - V005-0.3x-ZA-付费推荐:dlj.tf/ssrsub
+      - V145-1x-Melbourne
+      - SG|VMS|公益|0.3x-1
+      - V134-1.5x-Seoul
+      - V114-1.5x-Seoul
+      - V153-1x-Mexico
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - V002-0.1x-US-付费推荐:dlj.tf/ssrsub
+      - 美国3-解锁一切
+      - 香港Trojan-轻量办公
+      - 俄罗斯去Youtube广告
+      - 加拿大7丨电报群@bp520
+      - 香港01-Neflix|Disney+|HBO 2
+      - 香港02-Neflix|Disney+|HBO
+      - 香港03-Netflix|Disney+|HBO
+      - 香港04-Netflix|Disney+|HBO 2
+      - 日本01-Netflix|Disney+|动画疯 2
+      - 日本02 2
+      - 日本03 2
+      - 新加坡01-Netflix|Disney+|动画疯
+      - 新加坡02
+      - 新加坡03
+      - 美国01-Netflix|Disney+|动画疯
+      - 美国02
+      - 美国03
+      - 韩国01-Netflix|Disney+|动画疯
+      - 韩国02
+      - 台湾01-Hinet|Netflix|Disney+|动画疯
+      - 台湾02 2
+      - 台湾03-Netflix|Disney+|动画疯 2
+      - 实验性线路1|全节点轮询自动切换 2
+      - Japan
+      - 美国圣何塞3
+      - V003-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V004-0.1x-US-付费推荐:dlj.tf/ssrsub 2
+      - V111-0.5x-Chuncheon
+      - V112-0.5x-Chuncheon
+      - V119-1.5x-Singapore
+      - V131-0.5x-Chuncheon
+      - V133-1.5x-Seoul
+      - V141-0.5x-Saopaulo
+      - V154-1x-Chicago
+      - 香港 1
+      - 香港 2
+      - 香港 3
+      - 香港 4
+      - 日本 1
+      - 日本 2
+      - 日本 3
+      - 日本 4
+      - 新加坡 1
+      - 新加坡 2
+      - 新加坡 3
+      - 新加坡 4
+      - 美国 1
+      - 美国 2
+      - 美国 3
+      - 美国 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
